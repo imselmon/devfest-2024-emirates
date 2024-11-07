@@ -2,61 +2,182 @@
     {
         "id": "1001",
         "slide": "",
-        "title": "Session 1",
-        "description": "In this session, we will help you get kickstarted with web, starting from what is the current state of web in India, challenges and opportunities, Roadmap, Google's web technologies, getting started with e-commerce application. We will also see, how we can extend the functionalities of a web-app with Authentication, Database and Hosting using Firebase. You will also learn frequently asked interview questions.",
-        "track": "Web",
-        "link": "https://www.youtube.com/embed/SYQa0pqoPWA?si=PTsrvHcgN23ffbYJ",
-        "time": "06:00 PM to 06:35 PM (IST)",
+        "title": "Registration & Breakfast ☕",
+        "description": "Kick off DevFest 2024 with registration and a welcome breakfast, offering a chance to network with fellow attendees and speakers.",
+        "track": "General",
+        "link": "",
+        "time": "09:00 AM to 10:00 AM",
         "format": "Day 1",
-        "date": "Oct 22, 2021",
-        "timeDuration": "40",
-        "speakers": [
-            101
-        ]
+        "date": "Oct 23, 2024",
+        "timeDuration": "60",
+        "speakers": []
     },
     {
         "id": "1002",
         "slide": "",
-        "title": "Session 2",
-        "description": "In this session, we will help you get kickstarted with web, starting from what is the current state of web in India, challenges and opportunities, Roadmap, Google's web technologies, getting started with e-commerce application. We will also see, how we can extend the functionalities of a web-app with Authentication, Database and Hosting using Firebase. You will also learn frequently asked interview questions.",
-        "track": "Web",
+        "title": "Opening Ceremony",
+        "description": "A brief opening to introduce the event and set the stage for an exciting day focused on Responsible AI.",
+        "track": "General",
         "link": "",
-        "time": "06:00 PM to 06:35 PM (IST)",
+        "time": "10:45 AM to 11:00 AM",
         "format": "Day 1",
-        "date": "Oct 22, 2021",
-        "timeDuration": "40",
-        "speakers": [
-            101
-        ]
+        "date": "Oct 23, 2024",
+        "timeDuration": "15",
+        "speakers": []
     },
     {
         "id": "1003",
         "slide": "",
-        "title": "Session 3",
-        "description": "In this session, we will help you get kickstarted with web, starting from what is the current state of web in India, challenges and opportunities, Roadmap, Google's web technologies, getting started with e-commerce application. We will also see, how we can extend the functionalities of a web-app with Authentication, Database and Hosting using Firebase. You will also learn frequently asked interview questions.",
-        "track": "Web",
+        "title": "Keynote",
+        "description": "A keynote session by Mariam Aslam (GDE), exploring Responsible AI and the impact on the tech industry.",
+        "track": "Main",
         "link": "",
-        "time": "06:00 PM to 06:35 PM (IST)",
+        "time": "11:00 AM to 11:30 AM",
         "format": "Day 1",
-        "date": "Oct 22, 2021",
-        "timeDuration": "40",
+        "date": "Oct 23, 2024",
+        "timeDuration": "30",
         "speakers": [
-            102, 101
+            101
         ]
     },
     {
         "id": "1004",
         "slide": "",
-        "title": "Session 4",
-        "description": "In this session, we will help you get kickstarted with web, starting from what is the current state of web in India, challenges and opportunities, Roadmap, Google's web technologies, getting started with e-commerce application. We will also see, how we can extend the functionalities of a web-app with Authentication, Database and Hosting using Firebase. You will also learn frequently asked interview questions.",
-        "track": "Web",
+        "title": "Tiny Memory Efficient AI Agents using Golang and Genkit",
+        "description": "Learn about designing tiny, memory-efficient AI agents using Golang and Genkit, presented by Anubhav Singh.",
+        "track": "Main",
         "link": "",
-        "time": "06:00 PM to 06:35 PM (IST)",
+        "time": "11:30 AM to 12:00 PM",
         "format": "Day 1",
-        "date": "Oct 22, 2021",
-        "timeDuration": "40",
+        "date": "Oct 23, 2024",
+        "timeDuration": "30",
         "speakers": [
             102
         ]
+    },
+    {
+        "id": "1005",
+        "slide": "",
+        "title": "Fireside Chat",
+        "description": "Navigating the Tech Industry as an Emerging AI Engineer with Speaker 3 (TBD).",
+        "track": "Main",
+        "link": "",
+        "time": "12:30 PM to 1:00 PM",
+        "format": "Day 1",
+        "date": "Oct 23, 2024",
+        "timeDuration": "30",
+        "speakers": []
+    },
+    {
+        "id": "1006",
+        "slide": "",
+        "title": "Lunch Break 🍕",
+        "description": "Enjoy lunch and networking opportunities with other attendees and speakers.",
+        "track": "General",
+        "link": "",
+        "time": "01:00 PM to 02:30 PM",
+        "format": "Day 1",
+        "date": "Oct 23, 2024",
+        "timeDuration": "90",
+        "speakers": []
+    },
+    {
+        "id": "1007",
+        "slide": "",
+        "title": "Empowerment Hour: Unleashing Confidence, Boldness, and Career Triumphs",
+        "description": "A session dedicated to building confidence and exploring bold career choices.",
+        "track": "Main",
+        "link": "",
+        "time": "02:40 PM to 03:10 PM",
+        "format": "Day 1",
+        "date": "Oct 23, 2024",
+        "timeDuration": "30",
+        "speakers": [
+            103
+        ]
+    },
+    {
+        "id": "1008",
+        "slide": "",
+        "title": "Building the Future: Empowering Apps with LLM and AI",
+        "description": "Explore how to build applications that integrate LLMs and AI technology.",
+        "track": "Main",
+        "link": "",
+        "time": "03:10 PM to 03:40 PM",
+        "format": "Day 1",
+        "date": "Oct 23, 2024",
+        "timeDuration": "30",
+        "speakers": [
+            104
+        ]
+    },
+    {
+        "id": "1009",
+        "slide": "",
+        "title": "Refactoring Web Performance",
+        "description": "Insights on improving web performance through refactoring techniques.",
+        "track": "Main",
+        "link": "",
+        "time": "03:40 PM to 04:10 PM",
+        "format": "Day 1",
+        "date": "Oct 23, 2024",
+        "timeDuration": "30",
+        "speakers": [
+            105
+        ]
+    },
+    {
+        "id": "1010",
+        "slide": "",
+        "title": "How to Get Started with Your Startup",
+        "description": "Guidance on launching and growing a startup, tailored for emerging entrepreneurs.",
+        "track": "Main",
+        "link": "",
+        "time": "04:10 PM to 04:40 PM",
+        "format": "Day 1",
+        "date": "Oct 23, 2024",
+        "timeDuration": "30",
+        "speakers": [
+            106
+        ]
+    },
+    {
+        "id": "1011",
+        "slide": "",
+        "title": "Panel Discussion: Building the Next Unicorns in Nagpur",
+        "description": "A panel discussion on fostering unicorn startups in Nagpur and beyond.",
+        "track": "Main",
+        "link": "",
+        "time": "04:40 PM to 05:30 PM",
+        "format": "Day 1",
+        "date": "Oct 23, 2024",
+        "timeDuration": "50",
+        "speakers": []
+    },
+    {
+        "id": "1012",
+        "slide": "",
+        "title": "Closing Keynote and Vote of Thanks",
+        "description": "Concluding remarks and gratitude for all attendees, partners, and speakers.",
+        "track": "General",
+        "link": "",
+        "time": "05:30 PM to 06:00 PM",
+        "format": "Day 1",
+        "date": "Oct 23, 2024",
+        "timeDuration": "30",
+        "speakers": []
+    },
+    {
+        "id": "1013",
+        "slide": "",
+        "title": "High Tea ☕",
+        "description": "End the day with a relaxing high tea and networking session.",
+        "track": "General",
+        "link": "",
+        "time": "06:00 PM to 06:30 PM",
+        "format": "Day 1",
+        "date": "Oct 23, 2024",
+        "timeDuration": "30",
+        "speakers": []
     }
 ]
