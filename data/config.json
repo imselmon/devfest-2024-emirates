@@ -25,7 +25,7 @@
     },
     "description": {
       "short": "An annual event hosted by the Google Developers Group across the world to bring the technology closer to the developers. It is an all day developer conference where we aim to focus on multiple technologies through lightning talks, sessions, workshops, etc.",
-      "long": "An annual event hosted by the Google Developers Group across the world to bring the technology closer to the developers. It is an all day developer conference where we aim to focus on multiple technologies through lightning talks, sessions, workshops, etc.An annual event hosted by the Google Developers Group across the world to bring the technology closer to the developers. It is an all day developer conference where we aim to focus on multiple technologies through lightning talks, sessions, workshops, etc."
+      "long": "DevFest is a global community-driven tech conference, hosted by the Google Developer Groups (GDG) community. Each DevFest event is crafted by its GDG organizers to fit the learning needs and interests of their local developer community, with a strong focus on knowledge exchange, networking, and learning about Google developer technologies."
     },
     "stats": [
       {
@@ -55,21 +55,36 @@
     ],
     "whatToExpect": [
       {
-        "title": "Technical content",
-        "description": "Events hosted by the Google Developer Groups community, featuring leading experts on Google technologies in areas."
+        "title": "Technical Sessions",
+        "description": "Learn about the latest developer technologies from Google in the form of technical sessions and hands-on workshops."
+      },
+
+      {
+        "title": "Workshops and Codelabs",
+        "description": "  Participate in hands-on workshops and codelabs run by experienced developers."
+      },
+
+      {
+        "title": "Networking",
+        "description": "Connect with fellow developers and Googlers to share ideas and learn new things."
+      },
+
+      {
+        "title": "Panel Discussions",
+        "description": "Join panel discussions to learn about the latest trends in technology and get insights from industry experts."
       },
       {
-        "title": "Technical content",
-        "description": "Events hosted by the Google Developer Groups community, featuring leading experts on Google technologies in areas."
+        "title": "Swags and Goodies",
+        "description": "Get swags and goodies from Google and GDG Cloud Emirates."
       },
-      {
-        "title": "Technical content",
-        "description": "Events hosted by the Google Developer Groups community, featuring leading experts on Google technologies in areas."
-      }
+        {
+            "title": "Fun Activities",
+            "description": "Participate in fun activities and games to win exciting prizes."
+        }
     ],
     "pastDevFest": {
       "summery": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente amet asperiores unde. Adipisci nobis ipsum fuga amet? Ut, iusto tenetur quisquam neque consectetur impedit magnam unde harum a mollitia possimus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores laborum ut praesentium architecto a. Recusandae neque deserunt saepe mollitia quibusdam a nihil dicta in, totam hic molestias eaque. Dolores, nisi.",
-      "images": ["image-1.png", "image-2.png", "image-3.png"],
+      "images": ["image-1.png", "event_5.jpeg", "event_2.jpeg"],
       "stats": [
         {
           "name": "Speakers",

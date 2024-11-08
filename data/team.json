@@ -3,12 +3,12 @@
     "id": "6003",
     "name": "Mariam Aslam",
     "company": {
-      "name": "",
+      "name": "GDG Cloud Emirates",
       "designation": "Manager"
     },
-    "community_title": "",
-    "image": "",
-    "bio": "Mariam Aslam's bio goes here.",
+    "community_title": "Google Developer Expert",
+    "image": "mariam.jpg",
+    "bio": "Google Developer Expert",
     "social": {
       "linkedin": "",
       "twitter": "",
@@ -19,18 +19,17 @@
   },
   {
     "id": "6004",
-    "name": "Shaikh Salman",
+    "name": "Salman Shaikh",
     "company": {
       "name": "Scattr",
       "designation": "Founder"
     },
-    "community_title": "",
-    "image": "",
-    "bio": "Shaikh Salman's bio goes here.",
+    "community_title": "Kotlin User Group Organizer | Google Firebaser",
+    "image": "salman.webp",
+    "bio": " Shaikh Salman is a tech enthusiast and an Expert in Web Technologies. He is the founder of Scattr, a platform that helps you to Publish content to all your  media platforms at once.",
     "social": {
-      "linkedin": "",
-      "twitter": "",
-      "github": "",
+      "twitter": "https://twitter.com/imselmon",
+      "github": "https://github.com/imselmon",
       "web": ""
     },
     "type": "Core"
@@ -42,11 +41,11 @@
       "name": "",
       "designation": ""
     },
-    "community_title": "",
-    "image": "",
-    "bio": "Malaika Junaid's bio goes here.",
+    "community_title": "AI Junior | Data Analytics and ML Enthusiast",
+    "image": "malaika.jpeg",
+    "bio": "SWE Fellow @Headstarter AI",
     "social": {
-      "linkedin": "",
+      "linkedin": "https://www.linkedin.com/in/malaikajunaid/",
       "twitter": "",
       "github": "",
       "web": ""
@@ -61,7 +60,7 @@
       "designation": ""
     },
     "community_title": "",
-    "image": "",
+    "image": "abd.jpg",
     "bio": "Abdullah Khaleeq's bio goes here.",
     "social": {
       "linkedin": "",
@@ -79,8 +78,8 @@
       "designation": ""
     },
     "community_title": "",
-    "image": "",
-    "bio": "Muhammad Ali Khan's bio goes here.",
+    "image": "ali.webp",
+    "bio": "",
     "social": {
       "linkedin": "",
       "twitter": "",
@@ -88,5 +87,59 @@
       "web": ""
     },
     "type": "Core"
+  },
+  {
+    "id": "6007",
+    "name": "Waleed Arshad",
+    "company": {
+      "name": "",
+      "designation": ""
+    },
+    "community_title": "",
+    "image": "waleed_arshad_OVrdHLi.webp",
+    "bio": "",
+    "social": {
+      "linkedin": "",
+      "twitter": "",
+      "github": "",
+      "web": ""
+    },
+    "type": "Core"
+  },
+  {
+    "id": "6007",
+    "name": "Maryam Hesham Ali",
+    "company": {
+      "name": "",
+      "designation": ""
+    },
+    "community_title": "Data Science Student at AU",
+    "image": "maryam.jpeg",
+    "bio": "Maryam is a data science student at Ajman University with a strong expertise in Python, specializing in machine learning, data analytics, and AI. She applies Python to develop data-driven solutions through various hands-on projects, tackling real-world challenges and expanding her skill set to innovate in the field of data science.",
+    "social": {
+      "linkedin": "",
+      "twitter": "",
+      "github": "",
+      "web": ""
+    },
+    "type": "Volunteer"
+  }
+  , {
+    "id": "6007",
+    "name": "Tejal Dhanvijay",
+    "company": {
+      "name": "",
+      "designation": "Social Media Manager"
+    },
+    "community_title": "WTM Sambhaji Nagar",
+    "image": "tejal.jpeg",
+    "bio": "",
+    "social": {
+      "linkedin": "",
+      "twitter": "",
+      "github": "",
+      "web": ""
+    },
+    "type": "Volunteer"
   }
 ]
