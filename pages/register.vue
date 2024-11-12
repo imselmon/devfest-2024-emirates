@@ -122,10 +122,16 @@
                     variant="flat"
                     style="border: 1.5px solid #1e1e1e; color: black;text-transform: capitalize"
                     id="submitForm"
-                    :disabled="!isFormValid"
+                    :disabled="!isFormValid || loading"
                     @click="submitForm"
                 >
-                  Register
+                  <v-progress-circular
+                    v-if="loading"
+                    indeterminate
+                    color="white"
+                    size="20"
+                  ></v-progress-circular>
+                  <span v-else>Register</span>
                 </v-btn>
              </v-col>
             </v-row>
@@ -133,6 +139,18 @@
         </v-col>
       </v-row>
     </v-container>
+    <v-dialog v-model="showModal" max-width="500">
+      <v-card>
+        <v-card-title class="headline">Registration Successful</v-card-title>
+        <v-card-text>
+          Your registration has been successfully submitted.
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" text @click="showModal = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </NuxtLayout>
 </template>
 
@@ -149,6 +167,8 @@ const linkedin = ref('');
 const github = ref('');
 const expectations = ref('');
 const newsletter = ref(false);
+const loading = ref(false);
+const showModal = ref(false);
 
 const isFormValid = computed(() => {
   return name.value && email.value && phone.value && company.value && designation.value && location.value && expectations.value;
@@ -159,30 +179,24 @@ const submitForm = async () => {
     alert('Please fill all required fields.');
     return;
   }
-  try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbxjjcSkKhIJ7gIjPeWo8_w5Dq_JyREhxf1WYRQZu1-aRK5trIPQBfQQTv3IsBLJrNYcjg/exec', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: name.value,
-        email: email.value,
-        phone: phone.value,
-        company: company.value,
-        designation: designation.value,
-        location: location.value,
-        linkedin: linkedin.value,
-        github: github.value,
-        expectations: expectations.value,
-        newsletter: newsletter.value
-      })
-    });
-    const data = await response.json();
-    console.log('Registration successful:', data);
-  } catch (error) {
-    console.error('Registration failed:', error);
-  }
+  loading.value = true;
+  const xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxz6wp7fyHxqpmWIHE_1ev6dyiUO8J0imLPaON7IC57XDgTb6EdIrioB5mbWJnXCoxU/exec", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState === 4) {
+      loading.value = false;
+      if (xhttp.status === 200) {
+        console.log('Registration successful:', xhttp.responseText);
+        showModal.value = true;
+      } else {
+        console.error('Registration failed:', xhttp.responseText);
+      }
+    }
+  };
+
+  const params = `name=${encodeURIComponent(name.value)}&email=${encodeURIComponent(email.value)}&phone=${encodeURIComponent(phone.value)}&company=${encodeURIComponent(company.value)}&designation=${encodeURIComponent(designation.value)}&location=${encodeURIComponent(location.value)}&linkedin=${encodeURIComponent(linkedin.value)}&github=${encodeURIComponent(github.value)}&expectations=${encodeURIComponent(expectations.value)}&newsletter=${encodeURIComponent(newsletter.value)}`;
+  xhttp.send(params);
 };
 </script>
 
