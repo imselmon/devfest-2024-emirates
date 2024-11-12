@@ -16,13 +16,18 @@
           {
               "name":"talabat HQ",
               "link": "https://www.talabat.com/uae",
-              "logo": "talabat.png"
+              "logo": "talabat1.png"
           }
       ]
   },
   {
-    "category_name": "Giveaway Partners",
+    "category_name": "Sponsors",
     "sponsors": [
+      {
+        "name":"Github",
+        "link": "https://www.github.com/",
+        "logo": "github.png"
+      },
       {
         "name":"JetBrains",
         "link": "https://www.jetbrains.com/",
@@ -45,6 +50,5 @@
       }
     ]
   }
-
 
 ]
