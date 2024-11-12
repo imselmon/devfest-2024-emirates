@@ -3,7 +3,7 @@
     "id": "6003",
     "name": "Mariam Aslam",
     "company": {
-      "name": "GDG Cloud Emirates",
+      "name": "GDG Cloud Emirates Manager",
       "designation": "Manager"
     },
     "community_title": "Google Developer Expert",
@@ -18,18 +18,55 @@
     "type": "Core"
   },
   {
+    "id": "6007",
+    "name": "Muhammad Ali Khan",
+    "company": {
+      "name": "Co-Manager ",
+      "designation": ""
+    },
+    "community_title": "",
+    "image": "ali.webp",
+    "bio": "",
+    "social": {
+      "linkedin": "",
+      "twitter": "",
+      "github": "",
+      "web": ""
+    },
+    "type": "Core"
+  },
+  {
     "id": "6004",
     "name": "Salman Shaikh",
     "company": {
-      "name": "Scattr",
-      "designation": "Founder"
+      "name": " Creative Lead",
+      "designation": "Creative Lead"
     },
     "community_title": "Kotlin User Group Organizer | Google Firebaser",
     "image": "salman.webp",
-    "bio": " Shaikh Salman is a tech enthusiast and an Expert in Web Technologies. He is the founder of Scattr, a platform that helps you to Publish content to all your  media platforms at once.",
+    "bio": "Shaikh Salman is a tech enthusiast and an Expert in Web Technologies. He is the founder of Scattr, a platform that helps you to Publish content to all your media platforms at once.",
     "social": {
       "twitter": "https://twitter.com/imselmon",
       "github": "https://github.com/imselmon",
+      "web": ""
+    },
+    "type": "Core"
+  },
+
+  {
+    "id": "6007",
+    "name": "Waleed Arshad",
+    "company": {
+      "name": " Technical Director",
+      "designation": "Technical Director"
+    },
+    "community_title": "",
+    "image": "waleed_arshad_OVrdHLi.webp",
+    "bio": "",
+    "social": {
+      "linkedin": "",
+      "twitter": "",
+      "github": "",
       "web": ""
     },
     "type": "Core"
@@ -38,8 +75,8 @@
     "id": "6005",
     "name": "Malaika Junaid",
     "company": {
-      "name": "",
-      "designation": ""
+      "name": " Director",
+      "designation": "Director"
     },
     "community_title": "AI Junior | Data Analytics and ML Enthusiast",
     "image": "malaika.jpeg",
@@ -56,8 +93,8 @@
     "id": "6006",
     "name": "Abdullah Khaleeq",
     "company": {
-      "name": "",
-      "designation": ""
+      "name": " Design Lead",
+      "designation": "Design Lead"
     },
     "community_title": "",
     "image": "abd.jpg",
@@ -70,50 +107,15 @@
     },
     "type": "Core"
   },
-  {
-    "id": "6007",
-    "name": "Muhammad Ali Khan",
-    "company": {
-      "name": "",
-      "designation": ""
-    },
-    "community_title": "",
-    "image": "ali.webp",
-    "bio": "",
-    "social": {
-      "linkedin": "",
-      "twitter": "",
-      "github": "",
-      "web": ""
-    },
-    "type": "Core"
-  },
-  {
-    "id": "6007",
-    "name": "Waleed Arshad",
-    "company": {
-      "name": "",
-      "designation": ""
-    },
-    "community_title": "",
-    "image": "waleed_arshad_OVrdHLi.webp",
-    "bio": "",
-    "social": {
-      "linkedin": "",
-      "twitter": "",
-      "github": "",
-      "web": ""
-    },
-    "type": "Core"
-  },
+
   {
     "id": "6007",
     "name": "Maryam Hesham Ali",
     "company": {
-      "name": "",
-      "designation": ""
+      "name": " Operations Lead",
+      "designation": "Operations Lead"
     },
-    "community_title": "Data Science Student at AU",
+    "community_title": "Data Science Student at AU | Python Developer | AI Enthusiast",
     "image": "maryam.jpeg",
     "bio": "Maryam is a data science student at Ajman University with a strong expertise in Python, specializing in machine learning, data analytics, and AI. She applies Python to develop data-driven solutions through various hands-on projects, tackling real-world challenges and expanding her skill set to innovate in the field of data science.",
     "social": {
@@ -123,13 +125,13 @@
       "web": ""
     },
     "type": "Volunteer"
-  }
-  , {
+  },
+  {
     "id": "6007",
     "name": "Tejal Dhanvijay",
     "company": {
-      "name": "",
-      "designation": "Social Media Manager"
+      "name": " Marketing Lead",
+      "designation": "Marketing Lead"
     },
     "community_title": "WTM Sambhaji Nagar",
     "image": "tejal.jpeg",

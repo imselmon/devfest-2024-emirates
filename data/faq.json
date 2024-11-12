@@ -8,8 +8,8 @@
         "answer": "Google Developer Groups (GDG) is the largest developer community in the world. Over 1000+ GDGs exist in 140+ countries around the globe. The program helps developers connect with one another and learn about building products on all Google platforms.<br><br>Each GDG is a local community hub of professional developers who share expertise and passion for Google's developer technology.<br><br>GDG communities coordinate community activities centered around helping developers learn, connect, and grow while building a strong sense of belonging to the local and global Google Developer Groups community."
     },
     {
-        "question": "When will DevFest 2023 events happen?",
-        "answer": "The DevFest 2023 season starts September 1, 2023, with events happening through the end of the year."
+        "question": "When will DevFest 2024 events happen?",
+        "answer": "The DevFest 2024 season starts September 1, 2024, with events happening through the end of the year."
     },
     {
         "question": "How can I become a member of Google Developer Group?",
@@ -18,13 +18,6 @@
     {
         "question": "What is unique about DevFest?",
         "answer": "DevFest is the GDG program's annual globally distributed conference. Different from a meetup or speaker session, DevFests events cover multiple topics and offer a suite of activities that aim to help local developers come together to learn, build and understand the full suite of Google's developer tools.<br><br>DevFest events happen during the second part of the year and offer a way to engage with new content from various Google product teams."
-    },
-    {
-        "question": "What technologies might I use at a DevFest?",
-        "answer": "Contact a GDG chapter near you to see speaking opportunities."
-    },
-    {
-        "question": "How can I stay informed?",
-        "answer": "Follow Google Developer Groups India on <a href='https://twitter.com/gdgindia'>Twitter</a>. The best way to stay updated is to search the Google Developer Group page for the nearest community to you."
     }
+
 ]
