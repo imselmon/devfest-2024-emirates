@@ -20,8 +20,8 @@
       "map_link": "https://maps.app.goo.gl/Drd2fsXHTjAwzCSv5"
     },
     "registeration": {
-      "link": "https://gdg.community.dev/",
-      "end_date": "2024-10-25"
+      "link": "/register",
+      "end_date": "2024-12-07"
     },
     "description": {
       "short": "An annual event hosted by the Google Developers Group across the world to bring the technology closer to the developers. It is an all day developer conference where we aim to focus on multiple technologies through lightning talks, sessions, workshops, etc.",
@@ -83,20 +83,20 @@
         }
     ],
     "pastDevFest": {
-      "summery": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente amet asperiores unde. Adipisci nobis ipsum fuga amet? Ut, iusto tenetur quisquam neque consectetur impedit magnam unde harum a mollitia possimus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores laborum ut praesentium architecto a. Recusandae neque deserunt saepe mollitia quibusdam a nihil dicta in, totam hic molestias eaque. Dolores, nisi.",
+      "summery": "GDG Cloud Emirates recently hosted an exciting Google I/O Extended event, bringing together developers, tech enthusiasts, and Google fans for a day filled with insightful sessions, hands-on workshops, and inspiring discussions. The event served as a platform to explore the latest advancements in Google technologies, including Cloud, Android, AI, and web development.\n\n",
       "images": ["image-1.png", "event_5.jpeg", "event_2.jpeg"],
       "stats": [
         {
           "name": "Speakers",
-          "value": "23+"
+          "value": "7+"
         },
         {
           "name": "Participants",
-          "value": "200+"
+          "value": "150+"
         },
         {
           "name": "Sessions",
-          "value": "10+"
+          "value": "8+"
         },
         {
           "name": "Workshops",
@@ -107,6 +107,6 @@
   },
   "seo": {
     "keywords": "GDG, DevFest, Google, DevFest",
-    "hostUrl": "https://devfest-2024-emirates.pages.dev/"
+    "hostUrl": "https://gdgemirates.cloud/"
   }
 }

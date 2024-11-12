@@ -156,6 +156,11 @@
 
 <script setup>
 import { ref, computed } from 'vue';
+const { mainData } = useJSONData();
+
+definePageMeta({
+  layout: false,
+});
 
 const name = ref('');
 const email = ref('');
@@ -198,6 +203,28 @@ const submitForm = async () => {
   const params = `name=${encodeURIComponent(name.value)}&email=${encodeURIComponent(email.value)}&phone=${encodeURIComponent(phone.value)}&company=${encodeURIComponent(company.value)}&designation=${encodeURIComponent(designation.value)}&location=${encodeURIComponent(location.value)}&linkedin=${encodeURIComponent(linkedin.value)}&github=${encodeURIComponent(github.value)}&expectations=${encodeURIComponent(expectations.value)}&newsletter=${encodeURIComponent(newsletter.value)}`;
   xhttp.send(params);
 };
+
+
+
+useSeoMeta({
+  contentType: "text/html; charset=utf-8",
+  title:   `Registration  | ${mainData.eventInfo.name}` ,
+  description: mainData.eventInfo.description.short,
+  ogLocale:'en_US',
+  keywords: mainData.seo.keywords,
+  author: "OSS Labs",
+  creator: "OSS Labs",
+  viewport: "width=device-width, initial-scale=1.0",
+  ogTitle: mainData.eventInfo.name + " | " + mainData.communityName,
+  ogDescription: mainData.eventInfo.description.short,
+  ogImage: `${mainData.seo.hostUrl}/thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
+  ogUrl: mainData.seo.hostUrl,
+  ogType: "website",
+  twitterTitle: mainData.eventInfo.name + " | " + mainData.communityName,
+  twitterDescription: mainData.eventInfo.description.short,
+  twitterImage: `${mainData.seo.hostUrl}thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
+  twitterCard: "summary_large_image",
+});
 </script>
 
 <style scoped>
