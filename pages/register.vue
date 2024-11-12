@@ -138,8 +138,6 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import axios from 'axios';
-
 
 const name = ref('');
 const email = ref('');
@@ -162,19 +160,26 @@ const submitForm = async () => {
     return;
   }
   try {
-    const response = await axios.post('https://script.google.com/macros/s/AKfycbyVkIOowVfJKsJtpkfVsYDGzP1Bdt3TpNxUtfRk8-F3uKy6VjArjoCrvf31RckDEFkw3g/exec', {
-      name: name.value,
-      email: email.value,
-      phone: phone.value,
-      company: company.value,
-      designation: designation.value,
-      location: location.value,
-      linkedin: linkedin.value,
-      github: github.value,
-      expectations: expectations.value,
-      newsletter: newsletter.value
+    const response = await fetch('https://script.google.com/macros/s/AKfycbxjjcSkKhIJ7gIjPeWo8_w5Dq_JyREhxf1WYRQZu1-aRK5trIPQBfQQTv3IsBLJrNYcjg/exec', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        company: company.value,
+        designation: designation.value,
+        location: location.value,
+        linkedin: linkedin.value,
+        github: github.value,
+        expectations: expectations.value,
+        newsletter: newsletter.value
+      })
     });
-    console.log('Registration successful:', response.data);
+    const data = await response.json();
+    console.log('Registration successful:', data);
   } catch (error) {
     console.error('Registration failed:', error);
   }
