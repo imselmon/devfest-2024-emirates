@@ -20,6 +20,7 @@
       "map_link": "https://maps.app.goo.gl/Drd2fsXHTjAwzCSv5"
     },
     "registeration": {
+      "home": "/",
       "link": "/register",
       "end_date": "2024-12-07"
     },

@@ -147,7 +147,9 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="primary" text @click="showModal = false">Close</v-btn>
+          <v-btn color="primary" text
+                 :href = "mainData.eventInfo.registeration.home"
+                 @click="showModal = false">Close</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -157,7 +159,6 @@
 <script setup>
 import { ref, computed } from 'vue';
 const { mainData } = useJSONData();
-
 definePageMeta({
   layout: false,
 });
@@ -203,7 +204,6 @@ const submitForm = async () => {
   const params = `name=${encodeURIComponent(name.value)}&email=${encodeURIComponent(email.value)}&phone=${encodeURIComponent(phone.value)}&company=${encodeURIComponent(company.value)}&designation=${encodeURIComponent(designation.value)}&location=${encodeURIComponent(location.value)}&linkedin=${encodeURIComponent(linkedin.value)}&github=${encodeURIComponent(github.value)}&expectations=${encodeURIComponent(expectations.value)}&newsletter=${encodeURIComponent(newsletter.value)}`;
   xhttp.send(params);
 };
-
 
 
 useSeoMeta({
