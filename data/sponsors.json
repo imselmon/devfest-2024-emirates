@@ -49,6 +49,33 @@
         "logo": "mahathaan.png"
       }
     ]
+  },
+  {
+    "category_name": "Comunity Partners",
+    "sponsors": [
+      {
+        "name":"Flutter Xchange",
+        "logo": "fx.png"
+      },
+
+      {
+        "name":"Women in AI",
+        "logo": "wai.png"
+      },
+      {
+        "name":"Cypress",
+        "logo": "cypress.png"
+      },
+      {
+        "name":"hqcoders",
+        "logo": "codehq.png"
+      },
+      {
+        "name":"GDG Sharjah",
+        "logo": "gdgs.png"
+      }
+
+    ]
   }
 
 ]

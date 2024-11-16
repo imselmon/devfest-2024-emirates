@@ -143,5 +143,23 @@
       "web": ""
     },
     "type": "Volunteer"
+  },
+  {
+    "id": "6007",
+    "name": " Marya Hesham",
+    "company": {
+      "name": " Marketing Lead",
+      "designation": "Marketing Lead"
+    },
+    "community_title": "GDG Cloud Emirates",
+    "image": "marya.jpeg",
+    "bio": "",
+    "social": {
+      "linkedin": "",
+      "twitter": "",
+      "github": "",
+      "web": ""
+    },
+    "type": "Volunteer"
   }
 ]

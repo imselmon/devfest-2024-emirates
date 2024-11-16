@@ -75,6 +75,13 @@
                 ></v-text-field>
               </v-col>
             </v-row>
+            <v-select
+              v-model="foodPreference"
+              :items="['Veg', 'Non-Veg']"
+              label="Food Preference"
+              rounded
+              style="border: none; "
+            ></v-select>
             <v-row>
               <v-col cols="12" md="6">
                 <v-text-field
@@ -175,6 +182,7 @@ const expectations = ref('');
 const newsletter = ref(false);
 const loading = ref(false);
 const showModal = ref(false);
+const foodPreference = ref(''); // Added foodPreference
 
 const isFormValid = computed(() => {
   return name.value && email.value && phone.value && company.value && designation.value && location.value && expectations.value;
@@ -187,7 +195,7 @@ const submitForm = async () => {
   }
   loading.value = true;
   const xhttp = new XMLHttpRequest();
-  xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxz6wp7fyHxqpmWIHE_1ev6dyiUO8J0imLPaON7IC57XDgTb6EdIrioB5mbWJnXCoxU/exec", true);
+  xhttp.open("POST", "https://script.google.com/macros/s/AKfycbyuZ_viyhy0LsGDBFFse71yHEgtwtf4ytCQwo6zKsH0WL7Zw53MM5kL98CPm5cJ2AHR/exec", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState === 4) {
@@ -201,7 +209,7 @@ const submitForm = async () => {
     }
   };
 
-  const params = `name=${encodeURIComponent(name.value)}&email=${encodeURIComponent(email.value)}&phone=${encodeURIComponent(phone.value)}&company=${encodeURIComponent(company.value)}&designation=${encodeURIComponent(designation.value)}&location=${encodeURIComponent(location.value)}&linkedin=${encodeURIComponent(linkedin.value)}&github=${encodeURIComponent(github.value)}&expectations=${encodeURIComponent(expectations.value)}&newsletter=${encodeURIComponent(newsletter.value)}`;
+  const params = `name=${encodeURIComponent(name.value)}&email=${encodeURIComponent(email.value)}&phone=${encodeURIComponent(phone.value)}&company=${encodeURIComponent(company.value)}&designation=${encodeURIComponent(designation.value)}&location=${encodeURIComponent(location.value)}&linkedin=${encodeURIComponent(linkedin.value)}&github=${encodeURIComponent(github.value)}&expectations=${encodeURIComponent(expectations.value)}&newsletter=${encodeURIComponent(newsletter.value)}&foodPreference=${encodeURIComponent(foodPreference.value)}`;
   xhttp.send(params);
 };
 
