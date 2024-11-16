@@ -24,15 +24,26 @@
     "category_name": "Sponsors",
     "sponsors": [
       {
+        "name":"Flutter Xchange",
+        "logo": "fx.png"
+      },
+      {
+        "name":"Cypress",
+        "logo": "cypress.png"
+      },
+      {
         "name":"Github",
         "link": "https://www.github.com/",
         "logo": "github.png"
       },
+
       {
         "name":"JetBrains",
         "link": "https://www.jetbrains.com/",
         "logo": "jetbrains.png"
       },
+
+
       {
         "name":"DataCamp",
         "link": "https://www.datacamp.com/",
@@ -54,17 +65,8 @@
     "category_name": "Comunity Partners",
     "sponsors": [
       {
-        "name":"Flutter Xchange",
-        "logo": "fx.png"
-      },
-
-      {
         "name":"Women in AI",
         "logo": "wai.png"
-      },
-      {
-        "name":"Cypress",
-        "logo": "cypress.png"
       },
       {
         "name":"hqcoders",
