@@ -28,6 +28,7 @@
                   label="Email *"
                   required
                   rounded
+                  :error-messages="emailError"
                   style="border: none; "
                 ></v-text-field>
               </v-col>
@@ -39,6 +40,8 @@
                   label="WhatsApp Number *"
                   required
                   rounded
+                  :error-messages="phoneError"
+
                   placeholder="e.g. +1234567890"
                   style="border: none; "
                 ></v-text-field>
@@ -76,11 +79,12 @@
               </v-col>
             </v-row>
             <v-select
-              v-model="foodPreference"
-              :items="['Veg', 'Non-Veg']"
-              label="Food Preference"
-              rounded
-              style="border: none; "
+                v-model="foodPreference"
+                :items="['Veg', 'Non-Veg']"
+                label="Food Preference *"
+                required
+                rounded
+                style="border: none; "
             ></v-select>
             <v-row>
               <v-col cols="12" md="6">
@@ -184,10 +188,21 @@ const loading = ref(false);
 const showModal = ref(false);
 const foodPreference = ref(''); // Added foodPreference
 
-const isFormValid = computed(() => {
-  return name.value && email.value && phone.value && company.value && designation.value && location.value && expectations.value;
+const emailError = computed(() => {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return email.value && !emailPattern.test(email.value) ? 'Invalid email address' : '';
 });
 
+const phoneError = computed(() => {
+  const phonePattern = /^\+?[1-9]\d{1,14}$/;
+  return phone.value && !phonePattern.test(phone.value) ? 'Invalid phone number' : '';
+});
+
+const isFormValid = computed(() => {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phonePattern = /^\+?[1-9]\d{1,14}$/;
+  return name.value && emailPattern.test(email.value) && phonePattern.test(phone.value) && company.value && designation.value && location.value && expectations.value && foodPreference.value;
+});
 const submitForm = async () => {
   if (!isFormValid.value) {
     alert('Please fill all required fields.');
@@ -195,7 +210,7 @@ const submitForm = async () => {
   }
   loading.value = true;
   const xhttp = new XMLHttpRequest();
-  xhttp.open("POST", "https://script.google.com/macros/s/AKfycbyuZ_viyhy0LsGDBFFse71yHEgtwtf4ytCQwo6zKsH0WL7Zw53MM5kL98CPm5cJ2AHR/exec", true);
+  xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzLGbcEId4ehlxDQ5t8B0qVG4aqiII62FXIxTMu5RIioxhQn7FpxbzIpCn-RLazBxZQ/exec", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState === 4) {
