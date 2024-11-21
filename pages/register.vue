@@ -210,7 +210,7 @@ const submitForm = async () => {
   }
   loading.value = true;
   const xhttp = new XMLHttpRequest();
-  xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzLGbcEId4ehlxDQ5t8B0qVG4aqiII62FXIxTMu5RIioxhQn7FpxbzIpCn-RLazBxZQ/exec", true);
+  xhttp.open("POST", "https://script.google.com/macros/s/AKfycbz5wdvx-YrDk6vC3GEEYfZlcHcxXgK0qjq2IUcmM12lZh_n2RYvgVECJW1IFtT8IkNP/exec", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState === 4) {
