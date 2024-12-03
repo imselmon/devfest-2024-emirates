@@ -1,172 +1,3 @@
-<template>
-  <NuxtLayout name="default">
-    <v-container fluid class="mt-5">
-      <v-row>
-        <v-col md="8">
-          <h1>Register Form</h1>
-          <p>
-            Register now to get access to all the sessions, workshops, and networking opportunities.
-            <br>
-            <br>
-            <strong>Registration is free and open to everyone.</strong>
-          </p>
-          <v-form>
-            <v-row>
-              <v-col cols="12" md="6">
-                <v-text-field
-                  v-model="name"
-                  label="Name *"
-                  required
-                  rounded
-                  borderless
-                  style="border: none; "
-                ></v-text-field>
-              </v-col>
-              <v-col cols="12" md="6">
-                <v-text-field
-                  v-model="email"
-                  label="Email *"
-                  required
-                  rounded
-                  :error-messages="emailError"
-                  style="border: none; "
-                ></v-text-field>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" md="6">
-                <v-text-field
-                  v-model="phone"
-                  label="WhatsApp Number *"
-                  required
-                  rounded
-                  :error-messages="phoneError"
-
-                  placeholder="e.g. +1234567890"
-                  style="border: none; "
-                ></v-text-field>
-              </v-col>
-              <v-col cols="12" md="6">
-                <v-text-field
-                  v-model="company"
-                  label="Company / Institution *"
-                  placeholder="e.g. RIT, Google, Microsoft, etc."
-                  required
-                  rounded
-                  style="border: none; "
-                ></v-text-field>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12" md="6">
-                <v-text-field
-                  v-model="designation"
-                  label="Designation *"
-                  placeholder="e.g. Student, Developer, Designer, etc."
-                  required
-                  rounded
-                  style="border: none; "
-                ></v-text-field>
-              </v-col>
-              <v-col cols="12" md="6">
-                <v-text-field
-                  v-model="location"
-                  label="Location *"
-                  required
-                  rounded
-                  style="border: none; "
-                ></v-text-field>
-              </v-col>
-            </v-row>
-            <v-select
-                v-model="foodPreference"
-                :items="['Veg', 'Non-Veg']"
-                label="Food Preference *"
-                required
-                rounded
-                style="border: none; "
-            ></v-select>
-            <v-row>
-              <v-col cols="12" md="6">
-                <v-text-field
-                  v-model="linkedin"
-                  label="LinkedIn"
-                  rounded
-                  style="border: none; "
-                ></v-text-field>
-              </v-col>
-              <v-col cols="12" md="6">
-                <v-text-field
-                  v-model="github"
-                  label="GitHub"
-                  rounded
-                  style="border: none; "
-                ></v-text-field>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12">
-                <v-textarea
-                  v-model="expectations"
-                  label="What do you expect out of the event? *"
-                  required
-                  rounded
-                  style="border: none; "
-                ></v-textarea>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12">
-                <v-checkbox
-                  v-model="newsletter"
-                  label="Subscribe to our newsletter"
-                ></v-checkbox>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12">
-                <v-btn
-                    class="mt-4 mb-5"
-                    size="large"
-                    color="#FFD427"
-                    rounded
-                    variant="flat"
-                    style="border: 1.5px solid #1e1e1e; color: black;text-transform: capitalize"
-                    id="submitForm"
-                    :disabled="!isFormValid || loading"
-                    @click="submitForm"
-                >
-                  <v-progress-circular
-                    v-if="loading"
-                    indeterminate
-                    color="white"
-                    size="20"
-                  ></v-progress-circular>
-                  <span v-else>Register</span>
-                </v-btn>
-             </v-col>
-            </v-row>
-          </v-form>
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-dialog v-model="showModal" max-width="500">
-      <v-card>
-        <v-card-title class="headline">Registration Successful</v-card-title>
-        <v-card-text>
-          Your registration has been successfully submitted.
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn color="primary" text
-                 :href = "mainData.eventInfo.registeration.home"
-                 @click="showModal = false">Close</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-  </NuxtLayout>
-</template>
-
 <script setup>
 import { ref, computed } from 'vue';
 const { mainData } = useJSONData();
@@ -203,6 +34,11 @@ const isFormValid = computed(() => {
   const phonePattern = /^\+?[1-9]\d{1,14}$/;
   return name.value && emailPattern.test(email.value) && phonePattern.test(phone.value) && company.value && designation.value && location.value && expectations.value && foodPreference.value;
 });
+
+const isRegistrationClosed = computed(() => {
+  return new Date(mainData.eventInfo.registeration.end_date) <= new Date();
+});
+
 const submitForm = async () => {
   if (!isFormValid.value) {
     alert('Please fill all required fields.');
@@ -228,7 +64,6 @@ const submitForm = async () => {
   xhttp.send(params);
 };
 
-
 useSeoMeta({
   contentType: "text/html; charset=utf-8",
   title:   `Registration  | ${mainData.eventInfo.name}` ,
@@ -250,6 +85,39 @@ useSeoMeta({
 });
 </script>
 
-<style scoped>
-/* Add any custom styles here */
-</style>
+<template>
+  <NuxtLayout name="default">
+    <v-container fluid class="mt-5">
+      <v-row>
+        <v-col md="8">
+          <h1>Register Form</h1>
+          <p v-if="!isRegistrationClosed">
+            Register now to get access to all the sessions, workshops, and networking opportunities.
+            <br>
+            <br>
+            <strong>Registration is free and open to everyone.</strong>
+          </p>
+          <p v-else>
+            Registration is now closed. Thank you for your interest.
+          </p>
+          <v-form v-if="!isRegistrationClosed">
+          </v-form>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-dialog v-model="showModal" max-width="500">
+      <v-card>
+        <v-card-title class="headline">Registration Successful</v-card-title>
+        <v-card-text>
+          Your registration has been successfully submitted.
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" text
+                 :href = "mainData.eventInfo.registeration.home"
+                 @click="showModal = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+  </NuxtLayout>
+</template>
